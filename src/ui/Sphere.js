@@ -6,7 +6,7 @@ import TagCloud from 'TagCloud'
 export const Sphere = () => {
 
     useEffect(() => {
-      return () => {
+
         const container = ".tagcloud"
         const texts = ["HTML", "React", "JavaScript", "CSS", "MySQL", "Node", "Express", "SQLServer", "Android\nStudio", "Kotlin", "GitHub"]
 
@@ -17,7 +17,7 @@ export const Sphere = () => {
             keep: true 
         }
         TagCloud(container, texts, options)
-      }
+      
     }, [])
     
   return (
