@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary: #1d1823;
+    --secondary: #230833;
+    --alternate: #294e41;
+    --letra: #652a98;
+  }
+
+.banner {
+    /* background-image: linear-gradient(165deg,#1A1A2E, #E94560); */
+    background: linear-gradient(135deg, var(--primary) 50%, var(--secondary) 100%);
+}
+
+.bannerAbout {
+    /* background-image: linear-gradient(165deg,#1A1A2E, #E94560); */
+    background: linear-gradient(90deg, var(--primary) 60%, var(--secondary) 100%);
+    
+}
+
+.colorsec {
+    background: var(--secondary);
+}
+
+.colorprim {
+    background: var(--primary);
+}
+
+.coloralt {
+    background: var(--alternate);
+    
+}
+
+.colorletra {
+    background: var(--letra);
+}
+
+.containersphere {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    top: 0;
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family:"consolas";
+}
+
+.tagcloud--item {
+    color: white;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.images {
+    height:250px;
+
+}
+
+
+.rectangulo {
+    margin-bottom: -3.5rem;
+    background-color: var(--alternate);
+    border-radius: 10px;
+    position: relative;
+    font-family:"consolas"
+}
+
+.swiper {
+    max-width: 70rem;
+    max-height: 20rem;
+}
+
+@media screen and (min-width: 700px){
+    .computador {
+        max-width: 600px;
+    }
+    .proyecto {
+        max-width:500px;
+    }
+
+}
+.navAbout {
+    padding-top: 13rem;
+    border-left: red;
+    border-width: 5rem;
+}
+
+.navAbout {
+   padding: 1rem;
+}
+
+@media screen and (min-width: 700px){
+    .navAbout {
+        padding-top: 13rem;
+        border-left: red;
+        border-width: 5rem;
+    }
+    
+
+}
+
+
+
+.cardProject {
+    background: transparent;
+}
+
+.buttonAbout {
+    padding: 0.7rem;
+    background: transparent;
+    border-radius: 3rem;
+
+    color: var(--letra);
+    border-style: none;
+    
+}
+
+.mantenimiento {
+    font-size: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
