@@ -5,7 +5,7 @@ import { ListTec } from '../ui/ListTec'
 export const MyProjects = () => {
 
     return (
-        <div className='text-light text-center p-2'>
+        <div className='text-light text-center'>
 
             {
                 projects.map((project) => (
@@ -20,16 +20,16 @@ export const MyProjects = () => {
                             {
                                 project.link ?
                                     <div>
-                                        <a className='mx-3' target="_blank" rel="noreferrer noopener" href='https://www.matematicasconjimmy.com'> <ion-icon name="link-outline" style={{ "font-size": "2rem" }}></ion-icon> </a><br/>
+                                        <a className='mx-3' target="_blank" rel="noreferrer noopener" href={project.link}> <ion-icon name="link-outline" style={{ "font-size": "2rem" }}></ion-icon> </a><br/>
                                         <span style={{"font-size":"0.8rem"}}>webpage</span>
                                     </div>
                                     : ""
 
 
                             }
-                            <div className=''>
+                            <div>
                                 <p>Tecnologias usadas: </p>
-                                <ListTec lista={project.tecnologias} />
+                                <ListTec lista={project.tecnologias}/>
                             </div>
                         </div>
 

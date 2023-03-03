@@ -14,7 +14,7 @@ export const MySkills = () => {
 
 
     return (
-        <div className='text-light px-5 pt-5'>
+        <div className='text-light px-5 pt-5 '>
             <p>
                 Llevo poco mas de un año aprendiendo e introduciéndome en el mundo del desarrollo de sistemas. También, he explorado diversas tecnologías a lo largo de mi carrera, algunas de las cuales me llamaron más la atención y las estudié más a profundidad:
             </p>

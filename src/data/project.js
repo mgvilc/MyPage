@@ -1,14 +1,23 @@
 import imagen1 from "../photos/1p.jpg"
 import imagen2 from "../photos/2p.jpg"
 import imagen3 from "../photos/3p.jpg"
+import imagen4 from "../photos/4p.JPG"
 
 export const projects = [
     {
         "nombre": "Matemáticas con Jimmy",
         "descripcion": "Es una aplicación web diseñada especialmente para controlar los alumnos, sus notas y sus asistencias dentro de un centro de estudios personalizado, además de material académico y una interfaz para el alumno que le permita ver toda esa información.",
-        "tecnologias": ["React", "Express", "MySQL", "NodeJs"],
+        "tecnologias": ["React", "Express", "MySQL", "NodeJS"],
         "imagen": imagen1,
-        "link":"matematicasconjimmy.com"
+        "link":"https://matematicasconjimmy.com/",
+    },
+
+    {
+        "nombre": "Canchitas cusco",
+        "descripcion": "Es una aplicación web creada para la automatización de reserva de canchas deportivas en la ciudad del Cusco donde el usuario puede filtrar de acuerdo a sus necesidades y el dueño de una cancha puede organizar los horarios de su cancha. Mi participación en el desarrollo de esta aplicación  fué como colaborador.",
+        "tecnologias": ["MongoDB", "Express", "React", "NodeJS"],
+        "imagen": imagen4,
+        "link":"https://canchitascusco.netlify.app/",
     },
 
     {

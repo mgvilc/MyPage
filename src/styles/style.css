@@ -1,7 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-}
+
 :root {
     --primary: #1d1823;
     --secondary: #230833;
@@ -88,29 +85,24 @@
     .proyecto {
         max-width:500px;
     }
-
-}
-.navAbout {
-    padding-top: 13rem;
-    border-left: red;
-    border-width: 5rem;
-}
-
-.navAbout {
-   padding: 1rem;
-}
-
-@media screen and (min-width: 700px){
-    .navAbout {
-        padding-top: 13rem;
-        border-left: red;
-        border-width: 5rem;
+    .avatar {
+        max-width: 120px;
+        border-radius: 4rem;
+        margin-bottom: 2rem;
     }
-    
 
 }
 
-
+@media screen and (width< 990px){
+    .avatar{
+        max-width: 50px;
+        border-radius: 4rem;
+        margin-bottom: 2rem;
+    }
+    .itemsNav {
+        margin: 0rem 0rem 0rem -0.6rem !important;
+    }
+}
 
 .cardProject {
     background: transparent;
@@ -131,4 +123,14 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
 
+}
+
+.navS {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navRedes {
+    padding-top: 7rem;
 }

@@ -11,7 +11,7 @@ export const Sphere = () => {
         const texts = ["HTML", "React", "JavaScript", "CSS", "MySQL", "Node", "Express", "SQLServer", "Android\nStudio", "Kotlin", "GitHub"]
 
         const options = {
-            radius: 160,
+            radius: 140,
             maxSpeed: "normal",
             initSpeed: "fast",
             keep: true 
