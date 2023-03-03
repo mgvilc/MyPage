@@ -7,7 +7,7 @@ export const ContactScreen = () => {
     <div>
       <p className='mantenimiento text-light  text-center'>
 
-        Pagina en desarrollo... :c
+        Página en desarrollo... :c
       </p>
       <div>
 

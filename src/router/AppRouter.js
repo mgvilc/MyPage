@@ -17,7 +17,7 @@ export const AppRouter = () => {
             <div className='banner'>
                 <div className=''>
                     <div className='row m-0'>
-                        <div className='col-lg-2 col-sm-1 col-md-2 col-2 min-vh-100 bg-dark '>
+                        <div className='col-lg-2 col-sm-1 col-md-2 col-2 min-vh-100 colorprim'>
                             <NavBarSide />
                         </div>
                         <div className='col-lg-10 col-sm-11 col-md-10 col-10'>

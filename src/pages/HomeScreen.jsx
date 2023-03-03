@@ -10,24 +10,24 @@ export const HomeScreen = () => {
 
     <div className='text-light'>
       <div className='py-5 px-lg-5 px-md-3 px-1'>
-        <div className='py-5 text-light text-center'>
-          <h1 className='p-5'> ¡Hola!, Mi nombre es Miguel </h1>
+        <div className='py-5 text-light text-center' >
+          <h1 className='p-5' style={{"fontFamily":"Comic Sans MS"}}> ¡Hola!, Mi nombre es Miguel </h1>
           <p className='px-5 fs-5'>
-            Soy estudiante del último semestre de la escuela profesional de Ingeniería Informática y de Sistemas de la Universidad Nacional San Antonio Abad del Cusco.
+            Soy estudiante del último semestre de la escuela profesional de Ingeniería Informática y de Sistemas de la Universidad Nacional de San Antonio Abad del Cusco.
           </p>
         </div>
       </div>
       <div className='container'>
         <div className='row text-light d-flex justify-content-center'>
           <div className='col-lg-5 mx-sm-2  col-11 my-3'>
-            <h3 className='text-center' style={{ "color": "var(--letra)" }}> Mis habilidades </h3>
+            <h3 className='text-center fw-bold' style={{ "color": "var(--letra)", "fontFamily":"Comic Sans MS" }}> Mis habilidades </h3>
             <p className='mt-3 text-center'> Siempre estoy dispuesto a aprender y experimentar con nuevas herramientas. </p>
             <div>
               <Sphere />
             </div>
           </div>
           <div className='col-lg-5 mx-sm-2  col-11 my-3'>
-            <h3 className='text-center' style={{ "color": "var(--letra)" }}> Mi trabajo </h3>
+            <h3 className='text-center fw-bold' style={{ "color": "var(--letra)", "fontFamily":"Comic Sans MS" }}> Mi trabajo </h3>
             <p className='mt-3 text-center'> Soy desarrollador junior, por eso, trabajo siempre en proyectos que aumenten mi experiencia y valor como profesional. </p>
             <div>
               <Carousel />
