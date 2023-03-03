@@ -15,8 +15,8 @@ export const AppRouter = () => {
 
         <HashRouter>
             <div className='banner'>
-                <div className='container m-0'>
-                    <div className='row'>
+                <div className=''>
+                    <div className='row m-0'>
                         <div className='col-lg-2 col-sm-1 col-md-2 col-2 min-vh-100 bg-dark '>
                             <NavBarSide />
                         </div>
