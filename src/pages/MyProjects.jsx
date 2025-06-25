@@ -1,5 +1,4 @@
 import React from 'react'
-import { TagText } from '../components/TagText';
 import { useTranslation } from 'react-i18next';
 
 const TimelineItem = ({ date, description, technologies }) => {

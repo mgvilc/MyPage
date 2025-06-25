@@ -22,7 +22,7 @@ const TypingEffect = ({ texts, initialWords, speed = 150, pause = 1000 }) => {
             }, pause);
             return () => clearTimeout(resetTimeoutId);
         }
-    }, [charIndex, textIndex, texts, speed, pause]);
+    }, [charIndex, textIndex, texts, speed, pause, initialWords]);
 
     return (
         <span>{displayedText}</span>

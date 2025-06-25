@@ -8,7 +8,7 @@ import { Pie } from '../ui/Pie'
 import { useTranslation } from 'react-i18next';
 
 export const HomeScreen = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const sectionRefs = {
     main: useRef(null),
     section1: useRef(null),
@@ -53,14 +53,14 @@ export const HomeScreen = () => {
         <div className='icon flex justify-center items-center gap-1 md:gap-5 mx-3'>
           <div className="border-t border-2 border-slate-50 my-4 w-full"></div>
           <div className='flex gap-3 md:gap-10'>
-            <a class='mx-3 flex items-center hover:text-blue-500' target="_blank" rel="noreferrer noopener"
+            <a className='mx-3 flex items-center hover:text-blue-500' target="_blank" rel="noreferrer noopener"
               href='https://www.facebook.com/profile.php?id=100010537685724'>
               <ion-icon style={{ "fontSize": "2.3rem" }} name="logo-facebook"></ion-icon>
             </a>
-            <a class='mx-3 flex items-center hover:text-green-500' target="_blank" rel="noreferrer noopener" href='https://wa.link/l0z6od'>
+            <a className='mx-3 flex items-center hover:text-green-500' target="_blank" rel="noreferrer noopener" href='https://wa.link/l0z6od'>
               <ion-icon style={{ "fontSize": "2.3rem" }} name="logo-whatsapp"></ion-icon>
             </a>
-            <a class='mx-3 flex items-center hover:text-orange-400' target="_blank" rel="noreferrer noopener"
+            <a className='mx-3 flex items-center hover:text-orange-400' target="_blank" rel="noreferrer noopener"
               href='https://www.instagram.com/migguelvc?igsh=MW8wdTZiNDBscHh6MA=='>
               <ion-icon style={{ "fontSize": "2.3rem" }} name="logo-instagram"></ion-icon>
             </a>
