@@ -1,0 +1,44 @@
+{
+    "Navbar": {
+        "AboutMe": "Sobre mí",
+        "Experience": "Experiencia"
+    },
+    "Principal": {
+        "Me1": "Soy bachiller en Ingeniería Informática y de Sistemas de la Universidad Nacional de San Antonio Abad del Cusco, me gusta estar en constante aprendizaje de conocimientos y solucionar problemas mediante el diseño y construcción de algoritmos. Me especializo en el desarrollo",
+        "Me2": "utilizando lenguajes de programación como",
+        "Me3": "y",
+        "Me4": "con",
+        "Me5": "Sin embargo, también he trabajado en proyectos como desarrollador",
+        "Me6": "empleando",
+        "Me7": "como principal tecnología para el frontend."
+    },
+    "About": {
+        "Title": "SOBRE MI",
+        "Work": "Llevo más de 2 años trabajando como desarrollador full stack en proyectos para centros de estudio, monitoreo de proyectos, restaurantes, facturacion electronica y agencias de seguro.",
+        "Hobbies": "Cuando no estoy frente al computador me encontrarás disfrutando de una buena serie, haciendo ejercicio o relajandome con buena música.",
+        "Phrase": "Pelea hasta el final, porque tu vida dependerá de la fuerza que tengas en tu interior."
+    },
+    "Experience": {
+        "Title": "EXPERIENCIA",
+        "Experience1": "Las tecnologías que me encuentro usando ahora son",
+        "Experience2": "y",
+        "Experience3": "pero también he trabajado con otras tecnologías como",
+        "Technologies": "Tecnologías",
+        "Item1": {
+            "Header": "Mayo 2023 - Today",
+            "Description": "Trabajo en una empresa de desarrolo de software con sede en Cusco - Perú."
+        },
+        "Item2": {
+            "Header": "Febrero 2023 - Marzo 2023 (Freelancer)",
+            "Description": "Migracion de una aplicacion de escritorio a una plataforma web."
+        },
+        "Item3": {
+            "Header": "Setiembre 2022 - Diciembre 2022 (Freelancer)",
+            "Description": "Desarrollo de una aplicación web para control de notas y asistencia en un centro de estudio personalizado."
+        },
+        "Item4": {
+            "Header": "Agosto 2022",
+            "Description": "Desarrollo de un aplicación móvil para el conteo de carga y descarga de material en una zona de construcción."
+        }
+    }
+}

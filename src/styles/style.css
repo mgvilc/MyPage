@@ -1,20 +1,92 @@
-
 :root {
-    --primary: #1d1823;
-    --secondary: #230833;
-    --alternate: #294e41;
-    --letra: #652a98;
-  }
+    --primary: #1B1B1B;
+    --secondary: #b150e8;
+    --alternate: #10E956;
+    --font: #ffff;
+}
 
-.banner {
-    /* background-image: linear-gradient(165deg,#1A1A2E, #E94560); */
-    background: linear-gradient(135deg, var(--primary) 50%, var(--secondary) 100%);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar{
+    background: var(--primary);
+    color: var(--font);
+}
+
+.myName {
+    font-weight:500;
+    background-color: var(--primary);
+    color: var(--font);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.myDescription {
+    color: #10E956;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+}
+
+.icon{
+    color: var(--font);
+}
+
+.banner::before {
+    content: "";
+    background-color: var(--primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+section {
+    height: 100vh;
+    /* Ajusta el alto de cada sección */
+}
+
+.titleSection{
+    color: var(--secondary);
+    font-weight:600;
+    font-size: 3rem;
+}
+
+.contentSection {
+    color: var(--font);
+    font-size: 1.2rem;
+}
+
+.aboutTable {
+    border-width: 0.18rem;
+    border-color: var(--font);
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.aboutIcons {
+    font-size: 2.3rem;
+    color: var(--alternate);
+}
+
+.sectionLink {
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5rem;
+    
 }
 
 .bannerAbout {
     /* background-image: linear-gradient(165deg,#1A1A2E, #E94560); */
     background: linear-gradient(90deg, var(--primary) 60%, var(--secondary) 100%);
-    
+
 }
 
 .colorsec {
@@ -27,11 +99,11 @@
 
 .coloralt {
     background: var(--alternate);
-    
+
 }
 
-.colorletra {
-    background: var(--letra);
+.colorFont {
+    color: var(--font);
 }
 
 .containersphere {
@@ -47,20 +119,29 @@
     display: inline-block;
     top: 0;
     left: 0;
-    font-family:"consolas";
+    font-family: "consolas";
 }
 
 .tagcloud--item {
-    color: white;
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .pictures {
     display: flex;
     justify-content: center;
+    object-fit: cover;
+
+}
+
+.section {
+    display: flex;
     align-items: center;
 }
+
 .images {
-    height:250px;
+    height: 250px;
 
 }
 
@@ -70,7 +151,18 @@
     background-color: var(--alternate);
     border-radius: 10px;
     position: relative;
-    font-family:"consolas"
+    font-family: "consolas"
+}
+
+.tag{
+    background-color: var(--secondary);
+    border-radius: 10px;
+    font-family: "consolas";
+    padding-inline: 0.5rem;
+}
+
+.hyphen {
+    background-color: var(--secondary);
 }
 
 .swiper {
@@ -78,13 +170,15 @@
     max-height: 20rem;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
     .computador {
-        max-width: 600px;
+        max-width: 500px;
     }
+
     .proyecto {
-        max-width:500px;
+        max-width: 500px;
     }
+
     .avatar {
         max-width: 120px;
         border-radius: 4rem;
@@ -93,12 +187,13 @@
 
 }
 
-@media screen and (width< 990px){
-    .avatar{
+@media screen and (width< 990px) {
+    .avatar {
         max-width: 50px;
         border-radius: 4rem;
         margin-bottom: 2rem;
     }
+
     .itemsNav {
         margin: 0rem 0rem 0rem -0.6rem !important;
     }
@@ -108,14 +203,15 @@
     background: transparent;
 }
 
-.buttonAbout {
+.button {
     padding: 0.7rem;
-    background: transparent;
-    border-radius: 3rem;
-
+    background: var(--secondary);
+    border-radius: 1rem;
     color: var(--letra);
+    font-size: 1.3rem;
+    font-weight: 700;
     border-style: none;
-    
+
 }
 
 .mantenimiento {
@@ -133,4 +229,24 @@
 
 .navRedes {
     padding-top: 7rem;
+}
+
+.pie{
+    color: var(--font);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.imagePerfil {
+    background-image: url("../photos/imagePerfil.jpeg");
+    background-size: cover; /* La imagen cubre el círculo */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;  
+    height: 150px; 
+    max-width: 30vw; 
+    max-height: 30vw; 
+    min-width: 80px;
+    min-height: 80px; 
+    border-radius: 50%;
+    overflow: hiddenñ
 }

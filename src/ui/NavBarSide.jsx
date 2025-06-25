@@ -1,74 +1,51 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import avat from "./../photos/avat.jpeg"
+import { useState  } from "react";
+import { useTranslation } from 'react-i18next';
 
-export const NavBarSide = () => {
+export const NavBarSide = ({ onScrollTo }) => {
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(i18n.language === "en");
+
+    const toggleLanguage = () => {
+        const newLang = isEnglish ? "es" : "en";
+        i18n.changeLanguage(newLang);
+        setIsEnglish(!isEnglish);
+    };
+
     return (
-        <div className='sticky-top mt-4 text-light py-2'>
-            <ul className='navS itemsNav mx-4'>
-                <li className='my-1 '>
-                    <img src={avat} className="img-fluid avatar" alt="avatar" />
-
-
-                </li>
-                <li className='my-1'>
-                    <NavLink
-                        className={({ isActive }) => "text-light nav-link " + (isActive ? "active" : "")}
-                        to="/"
-                    >
-                        <i className="fa-solid fa-house "></i> <span className="mx-2 d-none d-md-inline">Home</span>
-                    </NavLink>
-
-                </li>
-
-                <li className='my-1'>
-                    <NavLink
-                        className={({ isActive }) => "text-light nav-link " + (isActive ? "active" : "")}
-                        to="/projects"
-                    >
-                        <i className="fa-solid fa-laptop-code "></i><span className="mx-2 d-none d-md-inline">Projects</span>
-                    </NavLink>
-                </li>
-
-                <li className='my-1'>
-                    <NavLink
-                        className={({ isActive }) => "text-light nav-link " + (isActive ? "active" : "")}
-                        to="/skills"
-                    >
-                        <i class="fa-solid fa-brain "></i><span className="mx-2 d-none d-md-inline">Skills</span>
-                    </NavLink>
-                </li>
-
-                <li className='my-1'>
-                    <NavLink
-                        className={({ isActive }) => "text-light nav-link " + (isActive ? "active" : "")}
-                        to="/contact"
-                    >
-                        <i class="fa-solid fa-comment-sms "></i><span className='mx-2 d-none d-md-inline'>Contact</span>
-                    </NavLink>
-                </li>
-            </ul>
-
-            <ul className={'navS navRedes my-2 '+(window.screenY>800 ? "d-flex justify-content-center" : "")}>
-                <li className='my-2'>
-                    <a target="_blank" rel="noreferrer noopener" href='https://www.facebook.com/profile.php?id=100010537685724'> <ion-icon name="logo-facebook" color="light" size="large"></ion-icon> </a>
-                </li>
-                <li className='my-2'>
-                    <a target="_blank" rel="noreferrer noopener" href='https://wa.link/s1vqkw'> <ion-icon name="logo-whatsapp" color="light" size="large"></ion-icon></a>
-
-                </li>
-                <li className='my-2'>
-                    <a target="_blank" rel="noreferrer noopener" href='https://instagram.com/migguelvc?igshid=NTA5ZTk1NTc='><ion-icon name="logo-instagram" color="light" size="large"></ion-icon></a>
-
-                </li>
-            </ul>
-
-            <div className='my-3'>
-                <span className='text-light d-none d-sm-inline'>  © Elaborado en 2023 </span> <br />
-                <span className='text-light text-muted d-none d-sm-inline'> Página en desarrollo</span>
+        <nav className="navbar text-white p-4 fixed w-full top-0 z-10">
+            <div className=" flex flex-wrap justify-center sm:justify-between items-center">
+                <div className="text-xl font-bold sm:px-0 px-10">
+                    <button onClick={() => onScrollTo('main')}>
+                        MigVC
+                    </button>
+                </div>
+                <ul className="flex space-x-3 md:space-x-9">
+                    <li>
+                        <button onClick={() => onScrollTo('section1')} className="hover:text-gray-400 text-lg">
+                            {t('Navbar.AboutMe')}
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick={() => onScrollTo('section2')} className="hover:text-gray-400 text-lg">
+                            {t('Navbar.Experience')}
+                        </button>
+                    </li>
+                    <li className='flex gap-2'>
+                        <span>ES</span>
+                        <button
+                            onClick={toggleLanguage}
+                            className={`w-14 h-7 flex items-center rounded-full p-1 transition-colors coloralt`}
+                        >
+                            <div
+                                className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform ${isEnglish ? "translate-x-7" : "translate-x-0"
+                                    }`}
+                            ></div>
+                        </button>
+                        <span>EN</span>
+                    </li>
+                </ul>
             </div>
-        </div>
-
-
+        </nav>
     )
 }

@@ -1,43 +1,47 @@
 import React from 'react'
-import { projects } from '../data/project'
-import { ListTec } from '../ui/ListTec'
+import { TagText } from '../components/TagText';
+import { useTranslation } from 'react-i18next';
+
+const TimelineItem = ({ date, description, technologies }) => {
+    return (
+        <div className="flex items-center mb-8">
+            <div className="flex flex-col items-center">
+                <div className="w-4 h-4 hyphen rounded-full"></div>
+            </div>
+            <div className="ml-4">
+                <h4 className="font-semibold text-2xl">{date}</h4>
+                <p className="text-xl">{description}</p>
+                <div>
+                    {technologies}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+
 
 export const MyProjects = () => {
+    const { t } = useTranslation();
+    const events = [
+        { date: t('Experience.Item1.Header'), description: t('Experience.Item1.Description'), technologies: t('Experience.Technologies') + ": C# .NET 8, SQL Server, Auth0, Azure Blob Storage, SFTP Servers." },
+        { date: t('Experience.Item2.Header'), description: t('Experience.Item2.Description'), technologies: t('Experience.Technologies') + ": PHP, SQL Server." },
+        { date: t('Experience.Item3.Header'), description: t('Experience.Item3.Description'), technologies: t('Experience.Technologies') + ": React, NodeJS, MySQL." },
+        { date: t('Experience.Item4.Header'), description: t('Experience.Item4.Description'), technologies: t('Experience.Technologies') + ": Android Studio, Kotlin, Google Sheets." },
+    ];
 
     return (
-        <div className='text-light'>
-            <h3 className='my-4 mx-2 fw-bold' style={{"fontFamily":"Comic Sans MS"}}> Mis proyectos: </h3>
-            {
-                projects.map((project) => (
-                    <div className='card cardProject my-3  text-center' key={project.nombre}>
-                        <div className='pictures'>
-                            <img src={project.imagen} className="img-fluid proyecto" alt={project.nombre} />
-
-                        </div>
-                        <div className='card-body'>
-                            <h5 className='car-title fw-bold' style={{"fontFamily":"Comic Sans MS"}}>{project.nombre}</h5>
-                            <p > {project.descripcion} </p>
-                            {
-                                project.link ?
-                                    <div>
-                                        <a className='mx-3' target="_blank" rel="noreferrer noopener" href={project.link}> <ion-icon name="link-outline" style={{ "font-size": "2rem" }}></ion-icon> </a><br/>
-                                        <span style={{"font-size":"0.8rem"}}>webpage</span>
-                                    </div>
-                                    : ""
-
-
-                            }
-                            <div>
-                                <p>Tecnologias usadas: </p>
-                                <ListTec lista={project.tecnologias}/>
-                            </div>
-                        </div>
-
-                    </div>
-                ))
-            }
-
+        <div className='flex flex-col gap-10'>
+            <div className='titleSection text-center'>
+                <p>{t('Experience.Title')}</p>
+            </div>
+            <div className='contentSection'>
+                <div>
+                    {events.map((event, index) => (
+                        <TimelineItem key={index} date={event.date} description={event.description} technologies={event.technologies} />
+                    ))}
+                </div>
+            </div>
         </div>
-
     )
 }

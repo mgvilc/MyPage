@@ -1,0 +1,45 @@
+{
+    "Navbar": {
+        "AboutMe": "About me",
+        "Experience": "Experience"
+    },
+    "Principal": {
+        "Me1": "I have a bachelor's degree in Computer Science and Systems Engineering from the National University of San Antonio Abad del Cusco. I enjoy constantly learning new knowledge and solving problems through the design and construction of algorithms. I specialize in the development of",
+        "Me2": "using programming languages ​​such as",
+        "Me3": "and",
+        "Me4": "with",
+        "Me5": "However, I have also worked on projects as a developer",
+        "Me6": "using",
+        "Me7": "as the main technology for the frontend."
+        
+    },
+    "About": {
+        "Title": "ABOUT ME",
+        "Work": "I have been working as a full stack developer for more than 2 years on projects for study centers, project monitoring, restaurants, electronic billing and insurance agencies.",
+        "Hobbies": "When I'm not in front of the computer you will find me exercising, enjoying a good series or relaxing with good music.",
+        "Phrase": "Fight until the end, because your life will depend on the strength that you have inside you"
+    },
+    "Experience": {
+        "Title": "EXPERIENCE",
+        "Experience1": "The technologies that I am using now are",
+        "Experience2": "and",
+        "Experience3": "but I have worked with other technologies like",
+        "Technologies": "Technologies",
+        "Item1": {
+            "Header": "May 2023 - Today",
+            "Description": "I am working in a software development company in Cusco - Perú."
+        },
+        "Item2": {
+            "Header": "February 2023 - March 2023 (Freelancer)",
+            "Description": "Migration of a desktop application to a web application."
+        },
+        "Item3": {
+            "Header": "September 2022 - December 2022 (Freelancer)",
+            "Description": "Development of a web application for a personalized study center."
+        },
+        "Item4": {
+            "Header": "August 2022",
+            "Description": "Development of a movil application for counting loading and unloading of material in a construction zone."
+        }
+    }
+}
